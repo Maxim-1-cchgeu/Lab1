@@ -43,7 +43,7 @@ void ship()
 
 int main()
 {
-	setlocale(LC_TYPE, "RUS");
+	setlocale(LC_CTYPE, "RUS");
 	name();
 	date();
 	ship();
