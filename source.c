@@ -1,5 +1,19 @@
-﻿#include<stdio.h>
-#include<locale.h>
+﻿#include <stdio.h>
+#include <locale.h>
+
+void name();
+void date();
+void ship();
+
+int main()
+{
+	setlocale(LC_CTYPE, "RUS.UTF-8");
+	name();
+	date();
+	ship();
+	
+	return 0;
+}
 
 void name()
 {
@@ -39,14 +53,4 @@ void ship()
 	puts("    \\                                  |");
 	puts("     \\________________________________/");
 	puts("");
-}
-
-int main()
-{
-	setlocale(LC_CTYPE, "RUS");
-	name();
-	date();
-	ship();
-	
-	return 0;
 }
